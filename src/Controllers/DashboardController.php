@@ -1,9 +1,9 @@
 <?php
 
-namespace Funbox\Plugins\Dashboard\Controllers;
+namespace Bolero\Plugins\Dashboard\Controllers;
 
-use Funbox\Framework\Http\Response;
-use Funbox\Framework\MVC\AbstractController;
+use Bolero\Framework\Http\Response;
+use Bolero\Framework\MVC\AbstractController;
 
 class DashboardController extends AbstractController
 {

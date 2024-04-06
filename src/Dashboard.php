@@ -1,6 +1,6 @@
 <?php
 
-namespace Funbox\Plugins\Dashboard;
+namespace Bolero\Plugins\Dashboard;
 
 use League\Container\DefinitionContainerInterface;
 
@@ -9,7 +9,7 @@ class Dashboard
     public static function viewsPaths(): array
     {
         return [
-            PLUGINS_PATH . 'Dashboard' . DIRECTORY_SEPARATOR . 'Views' . DIRECTORY_SEPARATOR,
+            __DIR__ . DIRECTORY_SEPARATOR . 'Views' . DIRECTORY_SEPARATOR,
         ];
     }
 
