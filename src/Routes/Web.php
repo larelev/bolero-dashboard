@@ -1,7 +1,9 @@
 <?php
 
 use Bolero\Framework\Routing\Route;
+use Bolero\Plugins\Authentication\Middlewares\Authentication;
+use Bolero\Plugins\Dashboard\Controllers\DashboardController;
 
-Route::get('/dashboard', [\Bolero\Plugins\Dashboard\Controllers\DashboardController::class, 'index', [
-    \Bolero\Plugins\Authentication\Middlewares\Authentication::class,
+Route::get('/dashboard', [DashboardController::class, 'index', [
+    Authentication::class,
 ]]);
